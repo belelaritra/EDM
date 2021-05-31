@@ -17,7 +17,7 @@ In Terminal:
 - Run `pip install youtube-search`
 
 Downloads:
-- Download (ffmpeg)[https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z]
+- Download [ffmpeg](https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z)
 
 ## Bot commands
 The bot can be called into action using `-` which also provides a list of commands:
