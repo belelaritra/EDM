@@ -16,7 +16,7 @@ client = commands.Bot(command_prefix="-")
 @client.event
 async def on_ready():
   print('We have logged in as {0.user}'.format(client))
-  activity = discord.Activity(type=discord.ActivityType.playing, name="-help")
+  activity = discord.Activity(type=discord.ActivityType.playing, name="-commands")
   await client.change_presence(status=discord.Status.online, activity=activity)
 
 # Command
@@ -194,7 +194,7 @@ async def stop(ctx):
 # -command     
    
 @client.command()
-async def command(ctx):
+async def commands(ctx):
     embedVar=discord.Embed(title='EDM Command Lists', description= 'If you have any questions or encounter issues, please contact here:\n https://github.com/belelaritra/EDM\n', color=0x00ff00)
     embedVar.add_field(name="-join", value="To add in Voice Channel", inline=False)
     embedVar.add_field(name="-play _<url or song name>_", value="To Play a Song", inline=False)
