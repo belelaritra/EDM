@@ -3,7 +3,7 @@
 A Discord Music Bot Written in Python.
 
 ## Invitation Link :
-[Currently The Bot is under Construction Phase]
+[Currently The Bot is under Construction Phase]( https://discord.com/oauth2/authorize?client_id=847845820644327505&scope=bot&permissions=6509030720)
 
 
 ## Installation
