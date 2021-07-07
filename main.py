@@ -16,6 +16,8 @@ client = commands.Bot(command_prefix="-")
 @client.event
 async def on_ready():
   print('We have logged in as {0.user}'.format(client))
+  activity = discord.Activity(type=discord.ActivityType.playing, name="-help")
+  await client.change_presence(status=discord.Status.online, activity=activity)
 
 # Command
 @client.command()
@@ -194,12 +196,12 @@ async def stop(ctx):
 @client.command()
 async def command(ctx):
     embedVar=discord.Embed(title='EDM Command Lists', description= 'If you have any questions or encounter issues, please contact here:\n https://github.com/belelaritra/EDM\n', color=0x00ff00)
-    embedVar.add_field(name="!join", value="To add in Voice Channel", inline=False)
-    embedVar.add_field(name="!play _<url or song name>_", value="To Play a Song", inline=False)
-    embedVar.add_field(name="!pausse", value="To pause a Song", inline=False)
-    embedVar.add_field(name="!resume", value="To resume a paused Song", inline=False)
-    embedVar.add_field(name="!stop", value="To Stop a Song", inline=False)
-    embedVar.add_field(name="!leave", value="To Leave the Voice Channel", inline=False)
+    embedVar.add_field(name="-join", value="To add in Voice Channel", inline=False)
+    embedVar.add_field(name="-play _<url or song name>_", value="To Play a Song", inline=False)
+    embedVar.add_field(name="-pausse", value="To pause a Song", inline=False)
+    embedVar.add_field(name="-resume", value="To resume a paused Song", inline=False)
+    embedVar.add_field(name="-stop", value="To Stop a Song", inline=False)
+    embedVar.add_field(name="-leave", value="To Leave the Voice Channel", inline=False)
     await ctx.channel.send(embed=embedVar)
     
 # Change 'TOKEN' with 'YOUR_TOKEN'
